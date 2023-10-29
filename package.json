@@ -19,7 +19,8 @@
   },
   "homepage": "https://github.com/JoinCODED/Task-Express-M3-Middlewares-noSQL#readme",
   "dependencies": {
+    "dotenv": "^16.3.1",
     "express": "^4.17.2",
-    "mongoose": "^7.1.0"
+    "mongoose": "^7.6.3"
   }
 }
