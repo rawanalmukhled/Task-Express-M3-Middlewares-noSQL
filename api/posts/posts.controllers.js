@@ -2,6 +2,10 @@ const Post = require("../../models/Post");
 
 exports.postsCreate = async (req, res, next) => {
   try {
+    if (req.file) {
+      req.body.image = req.file.path;
+    }
+
     const newPost = await Post.create(req.body);
     res.status(201).json(newPost);
   } catch (error) {
